@@ -1,12 +1,53 @@
-# React + Vite
+# List Creation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web application for creating and managing lists.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create, edit, and delete lists
+- Add, update, and remove items in each list
+- User-friendly interface
+- Data persistence (local storage)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/harshanand2021/list-creation-app.git
+    
+    cd list-creation-app
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+## Usage
+
+- Access the app at `http://localhost:5173`
+- Create a new list and add items as needed
+
+## Technologies Used
+
+- React + Vite
+- JavaScript
+- CSS
+
+## Contributing
+
+1. Fork the repository
+2. Create a new branch
+3. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
