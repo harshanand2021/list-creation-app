@@ -89,9 +89,6 @@ function AddItemForm({ onAdd }) {
       <h1 className="mb-6 text-4xl font-bold text-center text-blue-700">
         List Creation
       </h1>
-      <button className="px-4 py-2 text-white bg-green-600 rounded hover:bg-green-700">
-        Add List
-      </button>
 
       <input
         type="text"
