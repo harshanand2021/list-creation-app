@@ -36,6 +36,12 @@ function App() {
     setLists(updated);
   };
 
+  const deleteItem = (listIndex, itemIndex) => {
+    const updated = [...lists];
+    updated[listIndex].items.splice(itemIndex, 1);
+    setLists(updated);
+  };
+
   return (
     <div className="min-h-screen p-6 text-gray-800 bg-white">
       <h1 className="mb-6 text-4xl font-bold text-center">List Creation</h1>
@@ -59,12 +65,27 @@ function App() {
 
             <AddItemForm onAdd={(item) => addItem(idx, item)} />
 
-            {list.items.map((item, i) => (
+              {list.items.map((item, i) => (
+              <div key={i} className="flex items-center justify-between p-4 mb-3 bg-white rounded-lg shadow">
+                <div>
+                  <p className="font-semibold">{item.name}</p>
+                  <p className="text-sm text-gray-500">{item.species}</p>
+                </div>
+                <button
+                  onClick={() => deleteItem(idx, i)}
+                  className="px-3 py-1 text-sm text-white bg-red-600 rounded hover:bg-red-700"
+                >
+                  Delete
+                </button>
+              </div>
+            ))}
+
+            {/* {list.items.map((item, i) => (
               <div key={i} className="p-4 mb-3 bg-white rounded-lg shadow">
                 <p className="font-semibold">{item.name}</p>
                 <p className="text-sm text-gray-500">{item.species}</p>
               </div>
-            ))}
+            ))} */}
           </div>
         ))}
       </div>
